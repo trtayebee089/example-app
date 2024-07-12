@@ -15,4 +15,13 @@ class PdfController extends Controller
         $pdf = \PDF::loadView('container', compact('data'));
         return $pdf->download('TEST-FILE.pdf');
     }
+
+    public function viewPdf(Request $request){
+        $data = [
+            'name' => 'বাংলা নাম',
+            'age' => "৩০",
+        ];
+        
+        return view('container', compact('data'));
+    }
 }

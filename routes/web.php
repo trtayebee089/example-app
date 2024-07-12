@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/pdf', [PdfController::class, 'getPdf'])->name('pdf');
+Route::get('/pdf-view', [PdfController::class, 'viewPdf'])->name('pdf.view');

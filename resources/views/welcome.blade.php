@@ -48,7 +48,11 @@
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <a href="{{ route('pdf') }}"  class="mt-2 text-gray-600 dark:text-gray-400 text-sm p-6">
-                            Download PDF https://github.com/trtayebee089/example-app
+                            Download PDF 
+                        </a>
+
+                        <a href="{{ route('pdf.view') }}"  class="mt-2 text-white dark:text-white text-sm p-6" style="background-color: teal; color: #fff!important;">
+                            VIEW PDF 
                         </a>
                     </div>
                 </div>
